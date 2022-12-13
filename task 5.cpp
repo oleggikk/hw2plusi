@@ -54,19 +54,48 @@ void arrayChanger(int arr[], int size_of_array)
 }
 
 int main() {
-    int array1[10] = {-6, 5, -2, 4, 8, 10, -11, 12, -3, 16};
-    int size_of_array1 = sizeof(array1) / sizeof(array1[0]);
-    arrayChanger(array1, size_of_array1);
-
-    int array2[15] = {-7, -5, -2, 4, 8, 10, -45, 122, -3, -16, 24, -24, -5, -8, 11};
-    int size_of_array2 = sizeof(array2) / sizeof(array2[0]);
-    arrayChanger(array2, size_of_array2);
-
-    int array3[20] = {5, -5, -2, -2, 8, -8, 55, 122, -122, 24, 25, -24, -25, -34, -311, -316, 432, 42, -22, -76};
-    int size_of_array3 = sizeof(array3) / sizeof(array3[0]);
-    arrayChanger(array3, size_of_array3);
 
 
+    int num1;
+    std::cout << "Enter length of array: ";
+    std::cin >> num1; 
+    int *array1 = new int[num1];
+    std::cout << "Enter " << num1 << " values for array" << std::endl;
+    for (int i = 0; i < num1; i++)
+    {
+        std::cin >> array1[i];
+    }
+    std::cout << "Your array" << std::endl;
+    printArray(array1, num1);
+    arrayChanger(array1, num1);
+
+
+    int num2;
+    std::cout << "Enter length of array: ";
+    std::cin >> num2;
+    int *array2 = new int[num2];
+    std::cout << "Enter " << num2 << " values for array" << std::endl;
+    for (int i = 0; i < num2; i++)
+    {
+        std::cin >> array2[i];
+    }
+    std::cout << "Your array" << std::endl;
+    printArray(array2, num2);
+    arrayChanger(array2, num2);
+
+
+    int num3;
+    std::cout << "Enter length of array: ";
+    std::cin >> num3;
+    int *array3 = new int[num3];
+    std::cout << "Enter " << num3 << " values for array" << std::endl;
+    for (int i = 0; i < num3; i++)
+    {
+        std::cin >> array3[i];
+    }
+    std::cout << "Your array" << std::endl;
+    printArray(array3, num3);
+    arrayChanger(array3, num3);
 
     return 0;
 }
