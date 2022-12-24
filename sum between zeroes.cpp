@@ -60,7 +60,12 @@ int main()
         std::cout<<"\n";
     }
 
-    //Free space after the use of array
+    //Free space after the use of array:
+    for (int count = 0; count < rows; ++count)
+    {
+        delete[] array[count];
+    };
+
     delete [] array;
 
     return 0;
