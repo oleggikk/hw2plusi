@@ -41,6 +41,8 @@ int main()
             }
         }
     }
+    
+    delete[] arr; //freeing the allocated space
 
     std::cout<<"The maximum profit you can achieve through this transaction is: "<< maximum;
 
