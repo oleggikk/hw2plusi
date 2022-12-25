@@ -33,7 +33,7 @@ int main()
     std::cout<<std::endl;
 
     int *pa = &arr[0];  // pointer to the first element in array
-    int *pla = &arr[sizeOfArray - 1];  // pointer to the las element in array
+    int *pla = &arr[sizeOfArray - 1];  // pointer to the last element in array
 
     int temporary_value = *pa;
     *pa = *pla;
